@@ -1,0 +1,3 @@
+测试用例参考 V4OkHttpClientTest main
+
+客户端需要实现MyEventListener来进行流式消息获取

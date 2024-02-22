@@ -19,6 +19,9 @@ public class ClientReq {
      */
     private String requestId;
 
+    /**
+     * 用户端问题
+     */
     private String query;
     private String knowledge_id;
     /**

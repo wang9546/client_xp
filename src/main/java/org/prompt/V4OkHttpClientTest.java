@@ -23,9 +23,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class V4OkHttpClientTest {
 
-    private static final String API_KEY = "4a56df81ff2a33c197a3d6e79bf0652d";
+    private static final String API_KEY = "";
 
-    private static final String API_SECRET = "rnGAk47KBsGKltq9";
+    private static final String API_SECRET = "";
 
     private static final ClientV4 client = new ClientV4.Builder(API_KEY,API_SECRET).build();
 
@@ -130,15 +130,14 @@ public class V4OkHttpClientTest {
     }
 
     public static void main(String[] args) throws InterruptedException, UnsupportedEncodingException {
-//        testSseInvoke();
 
 
         String requestId = String.format(requestIdTemplate, System.currentTimeMillis());
 
 
         ClientReq req = new ClientReq();
-        req.setApiKey("4a56df81ff2a33c197a3d6e79bf0652d");
-        req.setApiSecret("rnGAk47KBsGKltq9");
+        req.setApiKey("");
+        req.setApiSecret("");
         req.setQuery("离职还要缴纳社保？");
         req.setKnowledge_id("1752939537920942080");
         req.setKnowledge_prompt_template(
